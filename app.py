@@ -3,6 +3,8 @@ import joblib
 
 model = joblib.load("log_reg_model.pkl")
 
+st.write("Number of features:", model.n_features_in_)
+st.write("Feature names:", getattr(model, "feature_names_in_", "Not available"))
 st.title("Student Pass / Fail Based on Study Hours")
 hours = st.number_input("Enter the Study Hours", min_value = 0.0, max_value = 15.0, value = 5.0)
 
