@@ -1,4 +1,4 @@
-import Streamlit as st
+import streamlit as st
 import joblib
 
 model = joblib.load("log_reg_model.pkl")
