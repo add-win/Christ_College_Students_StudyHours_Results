@@ -10,7 +10,7 @@ model = joblib.load("log_reg_model.pkl")
 def predict_result(study_hours):
 
     input_data = pd.DataFrame({
-        "Study_Hours": [study_hours]
+        "StudyHours": [study_hours]
     })
 
     prediction = model.predict(input_data)[0]
